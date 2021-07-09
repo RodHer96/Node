@@ -9,6 +9,7 @@ const eventoRoutes = require('./evento/evento.routes');
 const alertaRoutes = require('./alerta/alerta.routes');
 const personaRoutes = require('./persona/persona.routes');
 const dispositivoMovilRoutes = require('./dispositivoMovil/dispositivoMovil.routes');
+const municipioRoutes = require('./municipio/municipio.routes');
 
 //Inicializamos la base de datos
 db();
@@ -30,5 +31,6 @@ eventoRoutes(router);
 alertaRoutes(router);
 personaRoutes(router);
 dispositivoMovilRoutes(router);
+municipioRoutes(router);
 
 app.listen(properties.PORT, () => console.log(`El servidor está corriendo en el puerto ${properties.PORT}`));
